@@ -1,0 +1,26 @@
+providers:
+  - id: local-api
+    type: custom
+    config:
+      url: http://localhost:8000/query
+
+prompts:
+  - id: install
+    raw: "What do I need to install to run the project?"
+    label: "Install"
+
+  - id: start
+    raw: "How do I run the FastAPI backend?"
+    label: "Run backend"
+
+  - id: debug
+    raw: "Why does preprocessing store 0 chunks?"
+    label: "Debug chunks"
+
+  - id: connect
+    raw: "How to connect the frontend to the backend?"
+    label: "Frontend"
+
+  - id: deploy
+    raw: "How do I deploy this project to Render or GitHub Pages?"
+    label: "Deployment"
