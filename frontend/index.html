@@ -22,7 +22,7 @@
     async function ask() {
       const query = document.getElementById('query').value;
 
-      const res = await fetch('/api/', {
+      const res = await fetch('/search', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query })
